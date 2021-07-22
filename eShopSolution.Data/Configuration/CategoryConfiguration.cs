@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using eShopSolution.Data.Entities;
+using eShopSolution.Data.Enums;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace eShopSolution.Data.Configuration
+{
+    class CategoryConfiguration : IEntityTypeConfiguration<Category>
+    {
+        public void Configure(EntityTypeBuilder<Category> builder)
+        {
+            builder.ToTable("Categories");
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.Status).HasDefaultValue(Status.Active);
+        }
+    }
+}
