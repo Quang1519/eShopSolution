@@ -7,6 +7,7 @@ using eShopSolution.Application.Catalog.Products.Dtos.Public;
 using eShopSolution.Application.Dtos;
 using eShopSolution.Data.EF;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace eShopSolution.Application.Catalog.Products
 {

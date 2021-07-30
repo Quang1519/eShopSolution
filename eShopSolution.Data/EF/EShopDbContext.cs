@@ -34,7 +34,7 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
-            modelBuilder.ApplyConfiguration(new ProductImageconfiguration());
+            modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
             //base.OnModelCreating(modelBuilder);
 
             // Data seeding
